@@ -7,23 +7,65 @@
     <title>LGU Dashboard</title>
 </head>
 <body>
-    <header>
-    <div class="navbar">
-        <div class="logo"><img src="Bantayan_Island-removebg.png" alt="Logo"><h1>Student Transport System</h1>
+   <header class="top-nav">
+    <h2 class="logo">Dashboard</h2>
+    <nav>
+        <ul>
+            <li><a href="#dashboard" class="active">Dashboard</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#driverlogs">Driver Logs</a></li>
+            <li><a href="#maintenance">Bus Maintenance</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#user">User Management</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="main" id="dashboard">
+    <div class="cards">
+        <div class="card">
+            <h3>Total Registered Students</h3>
+            <p>0</p>
         </div>
-        <div class="nav-container">
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Dashboard</a></li>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Driver Logs</a></li>
-                <li><a href="#">Bus Maintenance</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">User Management</a></li>
-            </ul>
-        </nav>
+        <div class="card">
+            <h3>Total Bus</h3>
+            <p>0</p>
+        </div>
+        <div class="card">
+            <h3>Total Drivers</h3>
+            <p>0</p>
+        </div>
+        <div class="card">
+            <h3>Total Users</h3>
+            <p>0</p>
         </div>
     </div>
-</header>
+
+    <div class="table">
+        <div class="table-box">
+            <h3>Recent Activity</h3>
+            <p>Latest Boarding Records</p>
+        </div>
+    </div>
+</section>
+
+<section class="main" id="students">
+    <h2>Students</h2>
+</section>
+
+<section class="main" id="driverlogs">
+    <h2>Driver Logs</h2>
+</section>
+
+<section class="main" id="maintenance">
+    <h2>Bus Maintenance</h2>
+</section>
+
+<section class="main" id="reports">
+    <h2>Reports</h2>
+</section>
+
+<section class="main" id="user">
+    <h2>User Management</h2>
+</section>
 </body>
 </html>
