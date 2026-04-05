@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #F4F6F9, #D6E4F0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 1000px;
+    height: 550px;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    background: #F5F500;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.left h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left p {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    flex: 1;
+    background: #dcdcdc;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.right input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+.role-title {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.roles {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.roles button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.roles .active {
+    background: #9ef01a;
+}
+
+.role-info {
+    background: #bfbfbf;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #333;
+}

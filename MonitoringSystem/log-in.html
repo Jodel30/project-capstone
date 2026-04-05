@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="log-in.css">
+</head>
+<body>
+
+<body>
+
+<div class="main">
+
+    <div class="left">
+        <h1>WELCOME!</h1>
+        <h2>Student Transport Monitoring System</h2>
+        <p>for LGU and School Administration</p>
+        <img src="busIcon.png" alt="Bus Image">
+    </div>
+
+    <div class="right">
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Enter Username">
+        <input type="password" placeholder="Enter Password">
+
+        <div class="role-title">Choose your role</div>
+
+        <div class="roles">
+            <button class="active" onclick="selectRole(this, 'LGU Personnel')">LGU Personnel</button>
+            <button onclick="selectRole(this, 'Bus Driver')">Bus Driver</button>
+            <button onclick="selectRole(this, 'Administrators')">Administrators</button>
+        </div>
+
+        <div class="role-info" id="roleInfo">
+            <div>👤</div>
+            <div>
+                <strong>LGU Personnel</strong><br>
+                <small>Monitor and generate reports</small>
+            </div>
+        </div>
+
+        <button class="login-btn" id="loginBtn" onclick="login()">Login as LGU Personnel</button>
+    </div>
+
+</div>
+
+<script src="log-in.js">
+</script>
+
+</body>
+</html>
