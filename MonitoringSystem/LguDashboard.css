@@ -31,7 +31,7 @@ html {
 .top-nav {
     position: sticky;
     top: 0;
-    background: #fff;
+    background: #fff;;
     z-index: 1000;
     padding: 15px 30px;
     display: flex;
@@ -44,6 +44,7 @@ html {
     display: flex;
     list-style: none;
     gap: 15px;
+    font-size: 20px;
 }
 
 .top-nav a {
