@@ -21,7 +21,7 @@ body {
 
 .left {
     flex: 1;
-    background: #F5F500;
+    background: #1bd488;
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
@@ -88,7 +88,7 @@ body {
 }
 
 .roles .active {
-    background: #9ef01a;
+    background: #1bd488;
 }
 
 .role-info {

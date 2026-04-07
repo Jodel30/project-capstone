@@ -8,7 +8,7 @@
 </head>
 <body>
    <header class="top-nav">
-    <h2 class="logo">Dashboard</h2>
+    <img class="logo" src="buslogo-removebg-preview.png" alt="bus logo">
     <nav>
         <ul>
             <li><a href="#dashboard" class="active">Dashboard</a></li>
@@ -17,34 +17,56 @@
             <li><a href="#maintenance">Bus Maintenance</a></li>
             <li><a href="#reports">Reports</a></li>
             <li><a href="#user">User Management</a></li>
+            <img src="logout-removebg-preview.png">
         </ul>
     </nav>
 </header>
 <section class="main" id="dashboard">
+    <section class="title-card">
+   <div class="overlay">
+        <div class="title-content">
+            <h1>Student Transport Monitoring System</h1>
+            <p>
+               For LGU
+            </p>
+        </div>
+    </div>
+    </section>
     <div class="cards">
         <div class="card">
             <h3>Total Registered Students</h3>
             <p>0</p>
+            <img src="students-removebg-preview.png">
         </div>
         <div class="card">
             <h3>Total Bus</h3>
             <p>0</p>
+            <img src="bus-removebg-preview.png">
         </div>
         <div class="card">
             <h3>Total Drivers</h3>
             <p>0</p>
+            <img src="driver-removebg-preview.png">
         </div>
         <div class="card">
             <h3>Total Users</h3>
             <p>0</p>
+            <img src="users-removebg-preview.png">
         </div>
     </div>
 
     <div class="table">
         <div class="table-box">
-            <h3>Recent Activity</h3>
-            <p>Latest Boarding Records</p>
-        </div>
+    <h3>Recent Activity</h3>
+    <p>Latest Boarding Records</p>
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>LRN</th>
+            <th>Status</th>
+            <th>Timestamp</th>
+        </tr>
+    </table>
     </div>
 </section>
 
@@ -70,5 +92,6 @@
 <section class="main" id="user">
     <h2>User Management</h2>
 </section>
+<script src="LguDashboard.js"></script>
 </body>
 </html>
