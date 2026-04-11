@@ -21,7 +21,7 @@ body {
 
 .left {
     flex: 1;
-    background: #1bd488;
+    background: #0077b6;
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
@@ -30,16 +30,19 @@ body {
 .left h1 {
     font-size: 40px;
     margin-bottom: 15px;
+    color: #fffafa;
 }
 
 .left h2 {
     font-size: 18px;
     font-weight: bold;
+    color: #fffafa;
 }
 
 .left p {
     font-size: 14px;
     margin-bottom: 3px;
+    color: #fffafa;
 }
 
 .left img {
@@ -88,7 +91,7 @@ body {
 }
 
 .roles .active {
-    background: #1bd488;
+    background: #0077b6;
 }
 
 .role-info {

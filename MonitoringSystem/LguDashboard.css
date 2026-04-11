@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background: linear-gradient(to right, #e0e5e9, #D6E4F0);
+    background: linear-gradient(to right, #CAF0F8, #D6E4F0);
     display: block;
 }
 
@@ -22,7 +22,7 @@ html {
 .top-nav {
     position: sticky;
     top: 0;
-    background: #45828b;
+    background: #03045e;
     z-index: 1000;
     padding: 5px 30px;
     display: flex;
@@ -81,12 +81,11 @@ html {
 }
 #dashboard.main{
     margin-bottom: 30px;
-    background: linear-gradient(to right, #e0e5e9, #D6E4F0);
+    background: linear-gradient(to right, #CAF0F8, #D6E4F0);
 }
 #students.main{
     padding-top: 100px;
-    background: #055b65;
-    
+    background: linear-gradient(to right, #CAF0F8, #D6E4F0);
 }
 .topbar {
     display: flex;
@@ -117,7 +116,7 @@ html {
 .overlay {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #055b65, rgba(0,0,0,0.2));
+    background: linear-gradient(to right, #0077b6, rgba(0,0,0,0.2));
     display: flex;
     align-items: center;
     padding: 30px;
@@ -132,7 +131,7 @@ html {
     margin-bottom: 10px;
 }
 .title-card2 {
-    width: 80%;
+    width: 70%;
     height: 200px;
     background: linear-gradient(to right, 
             rgba(244,246,249,0) 90%
@@ -147,7 +146,7 @@ html {
 .overlay2 {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, #fbfcfc, rgba(255,255,255,0.1));
+    background: linear-gradient(to left, #0077b6, rgba(255,255,255,0.1));
     display: flex;
     justify-content: flex-end; 
     align-items: center;
@@ -161,8 +160,41 @@ html {
 }
 
 .title-content2 h1 {
+    color: #ffffff;
     font-size: 28px;
     margin-bottom: 10px;
+}
+.studentcard {
+    width: 310px;
+    height: 200px; 
+    padding: 12px;
+    align-items: center;;
+    border-radius: 30px;
+    background: #0077b6;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 129%;
+    right: 8%;
+}
+
+.studentcard h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.studentcard p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fbfcfc;
+    margin: 40px 0 50px 0;
+}
+
+.studentcard img {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 90px;
 }
 .cards {
     display: flex;
@@ -174,7 +206,7 @@ html {
     flex: 1;
     padding: 20px;
     border-radius: 20px;
-    background: #055b65;
+    background: #00b4d8;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     display: block;
@@ -232,9 +264,25 @@ html {
 .table-box tr {
     border-bottom: 1px solid #ddd;
 }
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
 .search {
-    padding: 10px;
-    width: 250px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 35px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+}
+
+.search-icon {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 16px;
+    opacity: 0.6;
 }

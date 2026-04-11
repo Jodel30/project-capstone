@@ -1,0 +1,1 @@
+console.log("Monitoring System - Practice JS Loaded");
