@@ -4,29 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="adminDashboard.css">
-<title>Dashboard</title>
+<title>Admin Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 </head>
 
 <body>
 
 <header class="top-nav">
-    <h2 class="logo">Dashboard</h2>
+    <img class="logo" src="buslogo-removebg-preview.png" alt="bus logo">
     <nav>
         <ul>
-            <li class="active">Dashboard</li>
-            <li>Students</li>
-            <li>Reports</li>
+            <li><a href="#dashboard" class="active">Dashboard</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <img class="profile" src="logout-removebg-preview.png" alt="Profile Image">
         </ul>
     </nav>
 </header>
 
-<section class="main">
+<section class="main" id="dashboard">
 
-    <div class="topbar">
-        <input type="text" class="search" placeholder="Search...">
-    </div>
 
 </section>
+    <section class="main" id="students">
+        <div class="container">
+    
+    <div class="left">
+        <img src="buslogo-removebg-preview.png" alt="image">
+    </div>
 
+    <div class="right">
+        <h2>Register Student</h2>
+
+       <form class="form" id="studentForm">
+    <input type="text" id="name" placeholder="Student Name" required>
+    <input type="text" id="lrn" placeholder="LRN" required>
+    <input type="text" id="grade" placeholder="Grade Level" required>
+    <input type="text" id="section" placeholder="Section" required>
+    <input type="text" id="address" placeholder="Address" required>
+
+    <button type="submit">Register</button>
+</form>
+    </div>
+       
+</div>
+<div id="qrcode"></div>
+    </section>
+    <section class="main" id="reports">
+        <h1>Reports</h1>
+    </section>
+    <script src="adminDashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>>
 </body>
 </html>

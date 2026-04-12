@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Test</title>
+</head>
+<body>
+
+<form id="studentForm">
+    <input type="text" id="lrn" placeholder="Enter LRN" required>
+    <button type="submit">Generate QR</button>
+</form>
+
+<div id="qrcode"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+<script>
+document.getElementById("studentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const lrn = document.getElementById("lrn").value;
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    QRCode.toCanvas(lrn, function (err, canvas) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        document.getElementById("qrcode").appendChild(canvas);
+    });
+});
+</script>
+
+</body>
+</html>

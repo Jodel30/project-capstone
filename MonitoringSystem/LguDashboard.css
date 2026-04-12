@@ -22,7 +22,7 @@ html {
 .top-nav {
     position: sticky;
     top: 0;
-    background: #03045e;
+    background: #0077b6;
     z-index: 1000;
     padding: 5px 30px;
     display: flex;
