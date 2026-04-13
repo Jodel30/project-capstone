@@ -128,6 +128,7 @@ html {
 
 .title-content h1 {
     font-size: 28px;
+    text-shadow: 0 0 10px #00d4ff;
     margin-bottom: 10px;
 }
 .title-card2 {
@@ -161,6 +162,7 @@ html {
 
 .title-content2 h1 {
     color: #ffffff;
+    text-shadow: 0 0 10px #00d4ff;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -278,6 +280,7 @@ html {
     background: #f8f9fa;
 }
 
+
 .search-icon {
     position: absolute;
     top: 55%;
@@ -285,4 +288,161 @@ html {
     transform: translateY(-50%);
     width: 16px;
     opacity: 0.6;
+}
+
+#driverlogs.main {
+    background: linear-gradient(to right, #CAF0F8, #D6E4F0);
+    padding-top: 100px;
+}
+
+.title-card3 {
+    flex: 1;
+    width: 70%;
+    height: 220px;
+    background: linear-gradient(to right, 
+            rgba(244,246,249,0) 90%
+        ), url('driver-removebg-preview.png') no-repeat right center;
+    background-size: 30%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px 0;
+    position: relative;
+}
+
+.overlay3 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1a1a2e, rgba(0,119,182,0.8));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-content3 {
+    max-width: 500px;
+    color: #ffffff;
+}
+
+.title-content3 h1 {
+    font-size: 50px;
+    text-shadow: 0 0 10px #00d4ff;
+    margin-bottom: 10px;
+}
+
+.driver-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.drivercard {
+    width: 310px;
+    height: 200px; 
+    padding: 12px;
+    border-radius: 30px;
+    background: #0077b6;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
+
+.drivercard p {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fbfcfc;
+    margin: 40px 0 50px 0;
+     margin-top: 20px; 
+    align-self: flex-end; 
+}
+.drivercard h3 {
+    font-size: 23px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00d4ff;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.drivercard img {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 90px;
+}
+
+.table1 {
+    margin-top: 20px;
+}
+
+
+.table-box1 {
+    flex: 1;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    height: 250px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.table-box1 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-box1 th,
+.table-box1 td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table-box1 tr {
+    border-bottom: 1px solid #ddd;
+}
+.maintenance-header {
+    display: flex;
+    align-items: center;
+}
+.title-card4 {
+    flex: 1;
+    width: 60%;
+    height: 180px;
+    background: linear-gradient(to right, rgba(244,246,249,0) 90%);
+    background-size: 30%;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px 0;
+    position: relative;
+}
+
+.overlay4 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1a1a2e, rgba(0,119,182,0.8));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-content4 {
+    max-width: 500px;
+    color: #ffffff;
+}
+
+.title-content4 h1 {
+    font-size: 50px;
+    text-shadow: 0 0 10px #00d4ff;
+    margin-bottom: 10px;
+}
+.main-image {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 50px;
+    
 }

@@ -15,7 +15,8 @@
     <nav>
         <ul>
             <li><a href="#dashboard" class="active">Dashboard</a></li>
-            <li><a href="#students">Students</a></li>
+            <li><a href="#studentsReg">Students Registration</a></li>
+            <li><a href="#studentsList">Student List</a></li>
             <li><a href="#reports">Reports</a></li>
             <img class="profile" src="logout-removebg-preview.png" alt="Profile Image">
         </ul>
@@ -23,10 +24,28 @@
 </header>
 
 <section class="main" id="dashboard">
-
+   <section class="title-card">
+   <div class="overlay">
+        <div class="title-content">
+            <h1>Student Transport Monitoring System</h1>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h3>Total Registered Students</h3>
+            <p>0</p>
+            <img src="students-removebg-preview.png">
+        </div>
+        <div class="card">
+            <h3>Total Bus</h3>
+            <p>0</p>
+            <img src="bus-removebg-preview.png">
+        </div>
+    </div>
+    </section>
 
 </section>
-    <section class="main" id="students">
+    <section class="main" id="studentsReg">
         <div class="container">
     
     <div class="left">
@@ -49,11 +68,30 @@
        
 </div>
 <div id="qrcode"></div>
+<section class="main" id="studentsList">      
+    <div class="table">
+        <div class="table-box">
+    <h3>REGISTERED STUDENTS</h3>
+    <div class="search-box">
+    <img src="searchh.png" class="search-icon">
+    <input type="text" class="search" placeholder="Search...">
+</div>
+    <table>
+        <tr>
+            <th>LRN</th>
+            <th>Name of Students</th>
+            <th>Grade Level</th>
+            <th>Section</th>
+            <th>Address</th>
+            <th>QR Code</th>
+        </tr>
+    </table>
+    </div>
     </section>
     <section class="main" id="reports">
         <h1>Reports</h1>
     </section>
     <script src="adminDashboard.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 </body>
 </html>

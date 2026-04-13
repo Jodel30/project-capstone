@@ -10,7 +10,7 @@ navLinks.forEach(link => {
     });
 });
 
-document.getElementById("studentForm").addEventListener("submit", function(e) {
+document.getElementById("studentForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value;
@@ -19,15 +19,35 @@ document.getElementById("studentForm").addEventListener("submit", function(e) {
     const section = document.getElementById("section").value;
     const address = document.getElementById("address").value;
 
-    const studentData = `LRN:${lrn} , Name:${name} , Grade:${grade} , Section:${section} , Address:${address}`;
+    try {
+        // SEND DATA TO SERVER
+        const res = await fetch("http://localhost:3000/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ name, lrn, grade, section, address })
+        });
 
-    document.getElementById("qrcode").innerHTML = "";
+        const data = await res.text();
+        alert(data);
+        
+         document.getElementById("studentForm").reset();
+        // CLEAR QR CODE AREA
+        const qrContainer = document.getElementById("qrcode");
+        qrContainer.innerHTML = "";
+        
+        // GENERATE QR CODE (fix: use QRCode.toCanvas correctly)
+        QRCode.toCanvas(lrn, function (err, canvas) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            qrContainer.appendChild(canvas);
+        });
 
-    QRCode.toCanvas(studentData, function (err, canvas) {
-        if (err) {
-            console.error(err);
-            return;
-        }
-        document.getElementById("qrcode").appendChild(canvas);
-    });
+    } catch (err) {
+        console.error(err);
+        alert("Error connecting to server");
+    }
 });
